@@ -34,6 +34,13 @@ install [powerlevel9k zsh theme](https://github.com/bhilburn/powerlevel9k/wiki/I
 You then need to select this theme in your `~/.zshrc`:
 
 ```
+  $ cp .zshrc ~/.zshrc
+```
+
+... or ...
+
+```
+  # ~/.zshrc
   ZSH_THEME="powerlevel9k/powerlevel9k"
 ```
 
@@ -41,13 +48,13 @@ install [powerline fonts](https://github.com/powerline/fonts)
 
 ```
 # clone
-git clone https://github.com/powerline/fonts.git --depth=1
+$ git clone https://github.com/powerline/fonts.git --depth=1
 # install
-cd fonts
-./install.sh
+$ cd fonts
+$ bash install.sh
 # clean-up a bit
-cd ..
-rm -rf fonts
+$ cd ..
+$ rm -rf fonts
 ```
 
-choose font in terminal at [iterm2 menu] > preferences > profiles > text > change font 
+choose font in terminal at [iterm2 menu] > preferences > profiles > text > change font - be sure to change *both* font selections (ASCII and non-ASCII)

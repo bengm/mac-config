@@ -1,23 +1,17 @@
-# If you come from bash you might have to change your $PATH.
-# export PATH=$HOME/bin:/usr/local/bin:$PATH
+plugins=(git bundler osx rake ruby rvm node)
+plugins+=(zsh-nvm)
 
 # Path to your oh-my-zsh installation.
-export ZSH="/Users/bgm/.oh-my-zsh"
+export ZSH=/Users/bmorris/.oh-my-zsh
 
-# Set name of the theme to load. Optionally, if you set this to "random"
-# it'll load a random theme each time that oh-my-zsh is loaded.
-# See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
+# Set name of the theme to load.
+# Look in ~/.oh-my-zsh/themes/
+# Optionally, if you set this to "random", it'll load a random theme each
+# time that oh-my-zsh is loaded.
 ZSH_THEME="powerlevel9k/powerlevel9k"
 POWERLEVEL9K_PROMPT_ON_NEWLINE=true
 POWERLEVEL9K_COLOR_SCHEME='dark'
 
-
-# Set list of themes to load
-# Setting this variable when ZSH_THEME=random
-# cause zsh load theme from this variable instead of
-# looking in ~/.oh-my-zsh/themes/
-# An empty array have no effect
-# ZSH_THEME_RANDOM_CANDIDATES=( "robbyrussell" "agnoster" )
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -51,10 +45,7 @@ POWERLEVEL9K_COLOR_SCHEME='dark'
 
 # Uncomment the following line if you want to change the command execution time
 # stamp shown in the history command output.
-# You can set one of the optional three formats:
-# "mm/dd/yyyy"|"dd.mm.yyyy"|"yyyy-mm-dd"
-# or set a custom format using the strftime function format specifications,
-# see 'man strftime' for details.
+# The optional three formats: "mm/dd/yyyy"|"dd.mm.yyyy"|"yyyy-mm-dd"
 # HIST_STAMPS="mm/dd/yyyy"
 
 # Would you like to use another custom folder than $ZSH/custom?
@@ -64,15 +55,20 @@ POWERLEVEL9K_COLOR_SCHEME='dark'
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(
-  git
-)
-
-source $ZSH/oh-my-zsh.sh
+plugins=(git)
 
 # User configuration
 
-# export MANPATH="/usr/local/man:$MANPATH"
+export PATH=$PATH:~/bin/usr/local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
+export MANPATH=/usr/local/man:$MANPATH
+# add homebrew intalled path for npm modules
+# export PATH=/usr/local/share/npm/bin:$PATH
+
+source $ZSH/oh-my-zsh.sh
+
+# make sure pg host is there
+export PGHOST=localhost
+# https://stackoverflow.com/questions/13868730/socket-file-var-pgsql-socket-s-pgsql-5432-missing-in-mountain-lion-os-x-ser
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
@@ -88,7 +84,7 @@ source $ZSH/oh-my-zsh.sh
 # export ARCHFLAGS="-arch x86_64"
 
 # ssh
-# export SSH_KEY_PATH="~/.ssh/rsa_id"
+# export SSH_KEY_PATH="~/.ssh/dsa_id"
 
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
@@ -98,5 +94,19 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+alias cdstsi="cd ~/Dropbox/rrapps/_stsi/"
+alias be="time bundle exec"
+alias webserver="python -m SimpleHTTPServer"
+
+alias ga="git add ."
+alias gc="git commit -m "
 alias gst="git status"
-alias gac="git add . & git commit -m"
+alias gpo="git push origin "
+alias gco="git checkout"
+
+# added by travis gem
+[ -f /Users/bmorris/.travis/travis.sh ] && source /Users/bmorris/.travis/travis.sh
+export PATH="/usr/local/opt/openssl/bin:$PATH"
+
+export NVM_DIR="/Users/bmorris/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
