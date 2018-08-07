@@ -2,7 +2,7 @@ plugins=(git bundler osx rake ruby rvm node)
 plugins+=(zsh-nvm)
 
 # Path to your oh-my-zsh installation.
-export ZSH=/Users/bmorris/.oh-my-zsh
+export ZSH=/Users/$USER/.oh-my-zsh
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
@@ -103,6 +103,9 @@ alias gc="git commit -m "
 alias gst="git status"
 alias gpo="git push origin "
 alias gco="git checkout"
+
+alias dc="docker-compose"
+alias dcr="docker-compose run"
 
 # added by travis gem
 [ -f /Users/bmorris/.travis/travis.sh ] && source /Users/bmorris/.travis/travis.sh
