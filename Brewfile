@@ -13,6 +13,7 @@ brew "gpg-agent", link: true
 brew "openssl"
 brew "openssl@1.1"
 brew "docker"
+cask "kitematic"
 brew "python"
 cask "iterm2"
 cask "atom"
