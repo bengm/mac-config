@@ -106,6 +106,10 @@ alias gco="git checkout"
 
 alias dc="docker-compose"
 alias dcr="docker-compose run"
+alias dce="docker exec -it"
+
+alias nr="npm run"
+
 
 # added by travis gem
 [ -f /Users/bmorris/.travis/travis.sh ] && source /Users/bmorris/.travis/travis.sh
