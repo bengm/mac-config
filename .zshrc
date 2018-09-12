@@ -115,5 +115,6 @@ alias nr="npm run"
 [ -f /Users/bmorris/.travis/travis.sh ] && source /Users/bmorris/.travis/travis.sh
 export PATH="/usr/local/opt/openssl/bin:$PATH"
 
-export NVM_DIR="/Users/bmorris/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+# NVM
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
