@@ -7,9 +7,9 @@ tap "homebrew/services"
 tap "homebrew/versions"
 brew "git", link: false
 brew "node"
-brew "nvm"
+# brew "nvm"
 brew "yarn"
-brew "gpg-agent", link: true
+# brew "gpg-agent", link: true
 brew "openssl"
 brew "openssl@1.1"
 brew "docker"
@@ -26,3 +26,4 @@ cask "java"
 cask "spotify"
 brew "sqlite"
 cask "postman"
+cask "dropbox"
