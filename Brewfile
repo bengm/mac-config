@@ -9,9 +9,9 @@ tap 'cloudfoundry/tap'
 
 brew "git", link: false
 brew "node"
-brew "nvm"
+# brew "nvm"
 brew "yarn"
-brew "gpg-agent", link: true
+# brew "gpg-agent", link: true
 brew "openssl"
 brew "openssl@1.1"
 brew "docker"
@@ -30,3 +30,4 @@ brew "sqlite"
 cask "postman"
 brew 'awscli'
 brew 'cf-cli'
+cask "dropbox"

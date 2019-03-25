@@ -1,18 +1,35 @@
 # Ben's Mac Setup
 
+## 0) Intall Brew
+
+```
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+```
+
+See [brew.sh](https://brew.sh) for more.
+
 ## 1) Brew bundle
 
 Install everything in the `Brewfile` by navigating to this directory in terminal and running:
 
 ```
-$ brew bundle
+brew bundle
 ```
+
+Note: I get the following error messages, but it doesn't seem to hurt.
+
+```
+Tapping homebrew/dupes has failed!
+...
+Tapping homebrew/versions has failed!
+```
+
 
 ## 2) OSX configurations
 
 From this directory, run
 ```
-$ bash osx-config.sh
+bash osx-config.sh
 ```
 
 ## Stuff that can't be installed via Brew
@@ -22,19 +39,19 @@ $ bash osx-config.sh
 install oh-my-zsh
 
 ```
-  $ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 ```
 
 install [powerlevel9k zsh theme](https://github.com/bhilburn/powerlevel9k/wiki/Install-Instructions#step-1-install-powerlevel9k) (note destination dir on right side of command)
 
 ```
-  $ git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k
+git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k
 ```
 
 You then need to select this theme in your `~/.zshrc`:
 
 ```
-  $ cp .zshrc ~/.zshrc
+cp .zshrc ~/.zshrc
 ```
 
 ... or ...
