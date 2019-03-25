@@ -5,6 +5,8 @@ tap "homebrew/core"
 tap "homebrew/dupes"
 tap "homebrew/services"
 tap "homebrew/versions"
+tap 'cloudfoundry/tap'
+
 brew "git", link: false
 brew "node"
 brew "nvm"
@@ -26,3 +28,5 @@ cask "java"
 cask "spotify"
 brew "sqlite"
 cask "postman"
+brew 'awscli'
+brew 'cf-cli'
