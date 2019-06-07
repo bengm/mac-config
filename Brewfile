@@ -16,6 +16,7 @@ brew "openssl"
 brew "openssl@1.1"
 brew "docker"
 brew "python"
+brew "heroku/brew/heroku"
 cask "iterm2"
 cask "atom"
 cask "visual-studio-code"
@@ -31,3 +32,4 @@ cask "postman"
 brew 'awscli'
 brew 'cf-cli'
 cask "dropbox"
+brew "python3"
