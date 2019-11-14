@@ -34,6 +34,10 @@ bash osx-config.sh
 
 ## Stuff that can't be installed via Brew
 
+### x-code
+
+Install x-code via the app store.
+
 ### oh-my-zsh & themes
 
 install oh-my-zsh

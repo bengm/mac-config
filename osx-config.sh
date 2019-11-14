@@ -23,3 +23,12 @@ defaults write com.apple.finder CreateDesktop -bool false && killall Finder
 defaults write com.apple.Finder FXPreferredViewStyle clmv
 
 killall Finder
+
+# OTHER
+# list branches as console output not editor
+git config --global pager.branch false
+
+
+# XCODE
+xcode-select --install
+# This should generate a prompt confirming command line tools (yes/confirm/install). 
