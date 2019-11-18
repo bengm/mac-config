@@ -11,7 +11,7 @@ export ZSH=/Users/$USER/.oh-my-zsh
 ZSH_THEME="powerlevel9k/powerlevel9k"
 POWERLEVEL9K_PROMPT_ON_NEWLINE=false
 POWERLEVEL9K_COLOR_SCHEME='dark'
-POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(dir dir_writable )
+POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=( dir_writable )
 POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status root_indicator background_jobs history nvm time)
 
 

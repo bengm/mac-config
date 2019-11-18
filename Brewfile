@@ -33,3 +33,4 @@ brew 'awscli'
 brew 'cf-cli'
 cask "dropbox"
 brew "python3"
+brew "git-lfs"
