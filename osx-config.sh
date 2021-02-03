@@ -27,7 +27,8 @@ killall Finder
 # OTHER
 # list branches as console output not editor
 git config --global pager.branch false
-
+# silence the power chime
+defaults write com.apple.PowerChime ChimeOnNoHardware -bool true && killall PowerChime
 
 # XCODE
 xcode-select --install

@@ -34,3 +34,5 @@ brew 'cf-cli'
 cask "dropbox"
 brew "python3"
 brew "git-lfs"
+cask "pgAdmin4"
+brew "rbenv"
